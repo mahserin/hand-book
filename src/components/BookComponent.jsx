@@ -3,7 +3,7 @@ import bookData from "../data.json";
 import SearchSection from './SearchSection'
 import "./BookComponent.css";
 import BookItem from "./BookItem";
-
+import { ToastContainer } from "react-toastify";
 const BookComponent = () => {
   const [books, setBooks] = useState([]);
   const url = new URL(window.location)
@@ -78,7 +78,7 @@ if(url.searchParams.get('sort') == 'price') booksSwap.sort((a,b) => {
     setBooks(booksSwap);
   }, []);
   return (
-    <div>
+    <div id="shop">
       
       <br></br>
       <h1 style={{ textAlign: "center", fontFamily: "Open sans", fontSize: 40}}>{url.searchParams.get('search') ? `Searched for : ${url.searchParams.get('search')}` : 'Recently Books Added'  } </h1>
@@ -89,6 +89,7 @@ if(url.searchParams.get('sort') == 'price') booksSwap.sort((a,b) => {
         ))}
       </ul>
       {!books.length && <p className="bookFound">book not found :(</p> }
+      <ToastContainer />
     </div>
   );
 };
