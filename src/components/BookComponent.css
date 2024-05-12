@@ -1,14 +1,6 @@
-/* .book-list-container {
-  text-align: center;
-  margin-top: 50px;
-} */
-
-
 .book-list {
-  list-style: none;
   padding: 30px;
 }
-
 .book-item {
   border: 1px solid #8b8787;
   margin-bottom: 10px;
@@ -41,13 +33,17 @@
 .book-list li:nth-last-child(-n+3) {
   list-style-type: none;
 }
+
 .bookFound {
   text-align: center;
   font-size: x-large;
 }
+
 .cart-btn {
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: transparent;
   border: 1px solid #888;
   border-radius: 4px;
 }
+
+/*# sourceMappingURL=BookComponent.css.map */
