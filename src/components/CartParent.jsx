@@ -10,7 +10,8 @@ export default function CartParent() {
   const [bookCart, setBookCart] = useState([])
   useEffect(() => {
     let booksSwap = []
-    cookie.cart.forEach(cookie => {
+    let carts = cookie.cart || []
+    carts.forEach(cookie => {
       booksSwap.push(books.cd.find(book => book.id == cookie))
     })
     setBookCart(booksSwap)

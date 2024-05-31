@@ -1,0 +1,94 @@
+$primary-color : #888
+$secondary-color : #555
+.SearchSection
+    max-width: max-content
+    margin: auto
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-top: 1rem
+    gap: 1rem
+    flex-wrap: wrap
+
+
+.searchBar
+    display: flex
+    background: #00000000
+    width: max-content
+    border : solid 1px $primary-color
+    padding: 5px 10px
+    border-radius: 10px
+    align-items: center
+
+    
+.searchBar > input 
+    background: transparent
+    border: none
+    outline: none
+
+    
+.searchBar > svg 
+    color: $secondary-color
+    
+
+.sort
+    display: flex
+    gap: 1rem
+    padding: 0 1.5rem
+    border: solid 1px $primary-color
+    border-radius: 10px
+    color: $secondary-color
+    align-items: center
+    
+.sort > div 
+        display: flex
+        gap: 2px
+        align-items: center
+    
+.sort svg 
+        font-size: 25px
+
+    
+.bold
+        font-weight: bold
+        color: #222
+    
+.rotate 
+    transform: rotate(180deg)
+    
+.price-range
+        display: flex
+        gap: 1rem
+        color: $secondary-color
+        border : solid 1px #777
+        padding: 0.5rem
+        border-radius: .5rem
+    
+.input 
+        background: transparent
+        width: 5.5rem
+        border : solid 1px $primary-color
+        padding-left: .5rem
+        border-radius: .3rem
+        outline: none
+      
+.submit-button 
+        padding: .15rem .5rem
+        background: transparent
+        outline: none
+        border: solid 1px $primary-color
+        border-radius: .3rem
+        color: $secondary-color
+    
+
+@media only screen and (max-width : 768px)
+    .SearchSection
+        display: grid
+
+    
+.searchBar
+    width: auto
+
+.searchBar > input 
+        width: 100%
+    
