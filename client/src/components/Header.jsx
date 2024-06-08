@@ -10,7 +10,7 @@ export default function Header() {
         <ul>
             <li><Link to="/">Home</Link></li>
             <li><a href="#">Sellers</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="/panel">panel</a></li>
             <li><Link to="/cart">cart</Link></li>
             <li><a href="#">Contact</a></li>
         </ul>
